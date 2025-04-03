@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Hunter Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bug Hunter Toolkit</h1>
+            <p class="subtitle">A collection of tools for security researchers</p>
+        </header>
+
+        <main>
+            <section id="ssrf-to-xss" class="tool-section">
+                <h2>SSRF to XSS Converter</h2>
+                <div class="input-group">
+                    <input type="text" id="ssrf-url" placeholder="Enter URL (e.g., javascript:alert(1))">
+                    <button id="redirect-btn">Redirect</button>
+                </div>
+            </section>
+
+            <section id="payload-encoder" class="tool-section">
+                <h2>Payload Encoder</h2>
+                <div class="input-group">
+                    <textarea id="payload-input" placeholder="Enter your payload here..."></textarea>
+                </div>
+                <div class="button-group">
+                    <button id="encode-base64">Base64 Encode</button>
+                    <button id="encode-url">URL Encode</button>
+                    <button id="encode-html">HTML Encode</button>
+                </div>
+                <div class="output-group">
+                    <textarea id="encoded-output" readonly placeholder="Encoded output will appear here..."></textarea>
+                    <button id="copy-btn">Copy to Clipboard</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
